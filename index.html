@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="book.ico" type="image/x-icon">
+  <title>Meeting Minutes</title>
+</head>
+<body>
+  <header>
+    <h1>Social Media App Brainstrom <span style="background-color: #ADD8E6">Meeting Minutes</span></h1>
+  </header>
+  <main>
+    <details>
+        <summary>Hi! We are making a <b>new</b> Social Media App!</summary>
+        <p>We are working to develop the newest and best social media app. Look through our meeting notes and let us know your thoughts!</p>
+      </details>
+    <nav>
+        <ul>
+            <li><a href="#date">Date</a></li>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#unfinished">Unfinished Business</a></li>
+            <li><a href="#new">New Business</a></li>
+            <li><a href="#miscellaneous">Miscellaneous</a></li>
+            <li><a href="#sketches">Whiteboard Sketches</a></li>
+        </ul>
+    </nav>
+    <section id="date">
+      <h2>Date</h2>
+      <p>April 9, 2024</p>
+    </section>
+    <section id="attendance">
+      <h2>Attendance</h2>
+      <ul>
+        <li>Anshi Singh</li>
+        <li>John Smith</li>
+        <li>Dev Patel</li>
+      </ul>
+    </section>
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <ol>
+        <li>Introductions</li>
+        <li>Overview of app concept and features</li>
+        <li>Discuss target audience and market research</li>
+        <li>Assign initial tasks (app design, development, user testing)</li>
+      </ol>
+    </section>
+    <section id="unfinished">
+      <h2>Unfinished Business</h2>
+      <p>Figure out <strong>tech stack</strong></p>
+    </section>
+    <section id="new">
+      <h2>New Business</h2>
+      <p>Discuss app development <em>timeline</em>, milestones, and deadlines</p>
+    </section>
+    <section id="miscellaneous">
+      <h2>Miscellaneous</h2>
+      <p>Find ideas for app <i>sponsors</i></p>
+    </section>
+    <section id="sketches">
+      <h2>Whiteboard Sketches</h2>
+      <h3>Wireframes</h3>
+      <img src="wireframes.png" alt="App Wireframes" width="400">
+      <h3>Architecture</h3>
+      <img src="architecture.png" alt="App Architecture" width="400">
+    </section>
+    <form>
+      <fieldset>
+          <legend>Feedback Form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" list="names"><br><br>
+          <datalist id="names">
+              <option value="Anshi">
+              <option value="John">
+              <option value="Dev">
+          </datalist>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date"><br><br>
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+          </select><br><br>
+          <label>Skills:</label><br>
+          <input type="radio" id="designer" name="radio" value="designer">
+          <label for="designer">Designer</label><br>
+          <input type="radio" id="developer" name="radio" value="developer">
+          <label for="developer">Developer</label><br><br>
+          <label for="agree">I want to get email updates about the app progress!</label>
+          <input type="checkbox" id="agree" name="agree"><br><br>
+          <input type="submit" value="Submit">
+      </fieldset>
+  </form> 
+   
+    <hr>
+    <div class="recording">
+      <h2>Audio Recording</h2>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+      </audio>
+      <h2>Video Recording</h2>
+      <video controls>
+        <source src="sample-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Social Media App</p>
+  </footer>
+</body>
+</html>

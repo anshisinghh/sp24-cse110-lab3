@@ -1,0 +1,12 @@
+<!-- Passcode for question 1: greenEggsAndHam -->
+<title data-question2="iHateCplusplus">Scavenger Hunt</title>
+<p hidden=""> Passcode for question 3: HTMLRocks</p>
+<question-four style="display:none">Passcode: JavaScriptRules</question-four>
+<span style="opacity: 0;">Question 5 Passcode: SvelteBeatsReact</span>
+// Question 6 Passcode: ThisIsJS
+Question 7 Passcode: YouFoundMe
+/* Question 8 passcode: coolcoolcool */
+<h2>Question 9 passcode: 2020sucked</h2>
+Question 10 PasscodeL listenToTheBlackKeys
+<meta name="question11" content="a11yComesFirst">
+<div data-question12passcode="iLoveWebDev"></div>
