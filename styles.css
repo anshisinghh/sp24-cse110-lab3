@@ -163,13 +163,84 @@
     font-size: 16px;
     color: #555;
   }
-  summary:hover {
-    color: #007bff;
+  strong {
+    color: #19406a;
   }
-  b {
-    color: #007bff;
+  summary:hover {
+    color: #19406a;
   }
   p {
     font-size: 18px;
   }
 
+/* Contact Page */
+  /* Contact Information */
+  #contact-info {
+    text-align: center;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+  .button:focus {
+    outline: none;
+  }
+  .phone-button {
+    background-color: #28a745; 
+  }
+  .phone-button:hover {
+    background-color: #218838;
+  }
+
+  /* Feedback Form */
+  fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+  }
+  legend {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="email"], textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="date"], select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
