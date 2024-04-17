@@ -151,9 +151,7 @@
   .img-container {
     display: flex;
     justify-content: space-around;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ccc;
+    border: 1px solid #ccc;
     margin-top: 20px;
   }
   .img-label {
@@ -194,24 +192,113 @@
   summary:hover {
     color: var(--light-theme-color);
   }
-  p {
+  .home-main p {
     font-size: 20px;
+    text-align: center;
+  }
+  .pitch {
+    font-weight: bold;
   }
 
 /* Contact Page */
-  /* Contact Information */
-  #contact-info {
-    text-align: center;
+  * {
+    box-sizing: border-box;
+  }
+  .contain {
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  @media (min-width: 600px) {
+    .contain {
+      padding: 0;
+    }
+  }
+  #contains-info h2, #contains-info ul {
+    margin: 0;
+  }
+  #contains-info h2 {
+    margin-bottom: 1rem;
+  }
+  input, textarea, button {
+    width: 100%;
+    border-width: 1px;
+    border-color: #000;
+    border-style: solid;
+    border-radius: 5px;
+  }
+  .wrapper {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .wrapper > * {
+    padding: 1em;
+  }
+  @media (min-width: 700px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    .wrapper > * {
+      padding: 2em 2em;
+    }
+  }
+  .contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-list li {
+    margin-bottom: 0.5cm;
+  }
+  .contacts {
+    background-color: var(--light-theme-color);
+    color: #fff;
+    margin-bottom: 0;
+  }
+  .form {
+    background: #fff;
+    margin-bottom: 0;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  form label {
+    display: block;
+  }
+  form p {
+    margin: 0;
+  }
+  .full-width {
+    grid-column: 1 / 3;
+  }
+  button, input, textarea {
+    padding: 1em;
+  }
+  input[type="submit"] {
+    background-color: var(--light-theme-color);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  input[type="submit"]:hover, input[type="submit"]:focus {
+    outline: 0;
+    background-color: var(--medium-theme-color);
+    cursor: pointer;
+  }
+  input[type="submit"]:active {
+    background-color: var(--dark-theme-color);
   }
   .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 0.1cm 0.2cm;
     background-color: rgb(0, 123, 255);
     color: white;
     border-radius: 5px;
     text-decoration: none;
-  }
+    text-align: center;
+  }  
   .button:hover {
     background-color: var(--button-hover-color, #0056b3);
   }
@@ -229,56 +316,4 @@
   }
   .phone-button:active {
     background-color: rgb(2, 43, 15);
-  }
-
-  /* Feedback Form */
-  fieldset {
-    border: 2px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    width: 95vw;
-    margin: 0 auto;
-  }
-  legend {
-    font-weight: bold;
-    font-size: 18px;
-  }
-  label {
-    display: block;
-    margin-bottom: 0.25cm;
-  }
-  input[type="text"], input[type="email"], textarea {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ccc;
-    border-radius: 5px;
-  }
-  input[type="date"], select {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ccc;
-    border-radius: 5px;
-  }
-  input[type="submit"] {
-    padding: 10px 20px;
-    background-color: var(--light-theme-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  input[type="submit"]:hover {
-    background-color: var(--medium-theme-color);
-  }
-  input[type="submit"]:active {
-    background-color: var(--dark-theme-color);
-  }
-  input[type="checkbox"] {
-    margin-right: 5px;
   }
