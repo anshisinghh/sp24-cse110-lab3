@@ -115,7 +115,7 @@
   .meeting-nav ul {
     font-size: 1rem;
   }
-  .meeting-page {
+  main.meeting-page {
     min-width: 400px;
     max-width: 800px;
     margin: 20px auto;
@@ -141,7 +141,7 @@
   section {
     margin-bottom: 20px;
   }
-  .checkbox li {
+  .checkbox:has(li) {
     list-style-type: "☐ ";
   }
   img {
@@ -152,6 +152,8 @@
     display: flex;
     justify-content: space-around;
     border: 1px solid #ccc;
+  }
+  h3 + .img-container {
     margin-top: 20px;
   }
   .img-label {
@@ -175,16 +177,16 @@
     width: 80%;
     max-width: 600px;
     position: sticky; top: 0;
+    p { /* Nested Selector */
+      font-size: 14pt;
+      color: hsl(270, 50%, 50%);
+    }
   }
   summary {
     font-size: 24px;
     font-weight: bold;
     color: black;
     cursor: pointer;
-  }
-  details p {
-    font-size: 14pt;
-    color: hsl(270, 50%, 50%);
   }
   strong {
     color: var(--light-theme-color);
@@ -196,8 +198,13 @@
     font-size: 20px;
     text-align: center;
   }
-  .pitch {
+  p ~ span {
+    font-size: 20px;
+    text-align: center;
     font-weight: bold;
+  }
+  .pitch {
+    background-color: #c9ade6;
   }
 
 /* Contact Page */
