@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1>Social Media App</span></h1>
+    <h1>Social Media App</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -25,41 +25,30 @@
     </nav>
   </header>
   <main>
-    <h2>Contact Us</h2>
-    <form>
-      <fieldset>
-          <legend>Feedback Form</legend>
+    <section id="contact-info">
+      <h2>Contact Information</h2>
+      <a href="mailto:contact@socialmediaapp.com" class="button">Email: contact@socialmediaapp.com</a>
+      <a href="tel:123-456-7890" class="button phone-button">Call: 123-456-7890</a>
+    </section>
+    <section id="feedback-form">
+      <h2>Feedback Form</h2>
+      <form>
+        <fieldset>
+          <legend>We'd love to hear from you!</legend>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" list="names"><br><br>
-          <datalist id="names">
-              <option value="Anshi">
-              <option value="John">
-              <option value="Dev">
-          </datalist>
           <label for="email">Email:</label>
           <input type="email" id="email" name="email"><br><br>
           <label for="date">Date:</label>
           <input type="date" id="date" name="date"><br><br>
           <label for="comments">Comments:</label><br>
           <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
-          <label for="rating">Rating:</label>
-          <select id="rating" name="rating">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-          </select><br><br>
-          <label>Skills:</label><br>
-          <input type="radio" id="designer" name="radio" value="designer">
-          <label for="designer">Designer</label><br>
-          <input type="radio" id="developer" name="radio" value="developer">
-          <label for="developer">Developer</label><br><br>
-          <label for="agree">I want to get email updates about the app progress!</label>
-          <input type="checkbox" id="agree" name="agree"><br><br>
+          <label for="agree"><input type="checkbox" id="agree" name="agree"> I want to receive updates about the app's progress.</label>
+          <br>
           <input type="submit" value="Submit">
-      </fieldset>
-  </form> 
+        </fieldset>
+    </form> 
+    </section>
   </main>
   <footer>
     <p>&copy; 2024 Social Media App</p>
