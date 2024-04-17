@@ -5,6 +5,12 @@
     text-align: center;
     padding: 10px 0;
   }
+  body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
 
 /* Navigation Bar */
   nav {
@@ -51,6 +57,9 @@
         flex: 1;
         padding: 20px;
     }
+    h2 {
+        text-align: center;
+    }
 
 /* Footer */
   footer {
@@ -58,5 +67,55 @@
     color: white;
     text-align: center;
     padding: 10px 0;
+  }
+
+/* Meeting Page */  
+  .meeting-nav {
+    background-color: black;
+  }
+  .meeting-nav ul li {
+    margin-top: 0;
+    margin-right: 25px;
+    margin-left: 25px;    
+  }
+  .meeting-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .meeting-page li {
+    margin-top: 10px;
+  }
+  h3 {
+    color: blue;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  h4 {
+    color: green;
+    font-size: 1.25em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  section {
+    margin-bottom: 20px;
+  }
+  .checkbox li {
+    list-style-type: "☐ ";
+  }
+  img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .img-container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+  }
+  .img-label {
+    text-align: center;
   }
   
