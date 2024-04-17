@@ -204,6 +204,9 @@
   .button:hover {
     background-color: var(--button-hover-color, #0056b3);
   }
+  .button:active {
+    background-color: rgb(9, 16, 86);
+  }
   .button:focus {
     outline: none;
   }
@@ -212,6 +215,9 @@
   }
   .phone-button:hover {
     background-color: #218838;
+  }
+  .phone-button:active {
+    background-color: rgb(2, 43, 15);
   }
 
   /* Feedback Form */
@@ -254,6 +260,9 @@
   }
   input[type="submit"]:hover {
     background-color: var(--medium-theme-color);
+  }
+  input[type="submit"]:active {
+    background-color: var(--dark-theme-color);
   }
   input[type="checkbox"] {
     margin-right: 5px;
