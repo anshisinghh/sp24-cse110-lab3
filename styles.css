@@ -131,6 +131,7 @@
     display: flex;
     justify-content: space-around;
     border: 1px solid #ccc;
+    margin-top: 20px;
   }
   .img-label {
     text-align: center;
