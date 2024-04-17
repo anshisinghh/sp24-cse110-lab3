@@ -24,16 +24,15 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h2>App Brainstrom <span style="background-color: #ADD8E6">Meeting Minutes</span></h2>
-    <nav>
+  <main class="meeting-page">
+    <h2>App Brainstrom Meeting Minutes</h2>
+    <nav class="meeting-nav">
         <ul>
             <li><a href="#date">Date</a></li>
             <li><a href="#attendance">Attendance</a></li>
             <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#unfinished">Unfinished Business</a></li>
-            <li><a href="#new">New Business</a></li>
-            <li><a href="#miscellaneous">Miscellaneous</a></li>
+            <li><a href="#todo">To-Do</a></li>
+            <li><a href="#actionitems">Action Items</a></li>
             <li><a href="#sketches">Whiteboard Sketches</a></li>
         </ul>
     </nav>
@@ -58,24 +57,32 @@
         <li>Assign initial tasks (app design, development, user testing)</li>
       </ol>
     </section>
-    <section id="unfinished">
-      <h3>Unfinished Business</h3>
-      <p>Figure out <strong>tech stack</strong></p>
+    <section id="todo">
+      <h3>To-Do</h3>
+      <ul class="checkbox">
+        <li>Figure out tech stack</li>
+      </ul>
     </section>
-    <section id="new">
-      <h3>New Business</h3>
-      <p>Discuss app development <em>timeline</em>, milestones, and deadlines</p>
-    </section>
-    <section id="miscellaneous">
-      <h3>Miscellaneous</h3>
-      <p>Find ideas for app <i>sponsors</i></p>
+    <section id="actionitems">
+      <h3>Action Items</h3>
+      <ul class="checkbox">
+        <li>Discuss app development timeline</li>
+        <li>Set deadlines</li>
+        <li>Find ideas for app sponsors</li>
+      </ul>
     </section>
     <section id="sketches">
       <h3>Whiteboard Sketches</h3>
-      <h4>Wireframes</h4>
-      <img src="wireframes.png" alt="App Wireframes" width="400">
-      <h4>Architecture</h4>
-      <img src="architecture.png" alt="App Architecture" width="400">
+      <div class="img-container">
+        <div class="img-label">
+          <h4>Wireframes</h4>
+          <img src="wireframes.png" alt="App Wireframes" width="400">
+        </div>
+        <div class="img-label">
+          <h4>Architecture</h4>
+          <img src="architecture.png" alt="App Architecture" width="400">
+        </div>  
+      </div>
     </section>
   </main>
   <footer>
