@@ -1,0 +1,313 @@
+/* External CSS stylesheet */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #ADD8E6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+details {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Tabbed Layout */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #ADD8E6;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Font Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Comment */
+/* Adding comments for better readability */
+
+/* Color */
+h1 {
+    color: #333;
+}
+
+/* Unit */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Box Model */
+details {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Position */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Box Model for Sketches */
+#sketches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sketches img {
+    max-width: 45%;
+    margin-bottom: 20px;
+}
+
+/* Color */
+/* Color */
+h1 {
+    color: #333;
+}
+
+/* Color */
+p {
+    color: #333;
+}
+
+/* Unit */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Box Model */
+details {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Box Model */
+form {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Box Model */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Box Model */
+textarea {
+    width: 100%;
+}
+
+/* Box Model */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Box Model */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Box Model */
+/* Tabbed Layout */
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #ADD8E6;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Color */
+/* Tabbed Layout */
+.tab {
+    color: #333;
+}
+
+/* Unit */
+/* Tabbed Layout */
+.tab {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Box Model */
+/* Tabbed Layout */
+.tab {
+    padding: 10px;
+}
+
+/* Box Model */
+/* Tabbed Layout */
+.tab-content {
+    padding: 20px;
+}
+
+/* Box Model */
+/* Tabbed Layout */
+.tab-content.active {
+    display: block;
+}
+
+/* Position */
+/* Tabbed Layout */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Position */
+/* Tabbed Layout */
+.tab {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Position */
+/* Tabbed Layout */
+.tab-content {
+    display: none;
+}
+
+/* Position */
+/* Tabbed Layout */
+.tab-content.active {
+    display: block;
+}
