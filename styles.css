@@ -1,3 +1,39 @@
+<<<<<<< Updated upstream
+=======
+/* Header */
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+/* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+>>>>>>> Stashed changes
 /* Dropdown for Meeting Notes */
     .dropdown-content {
         display: none;
