@@ -11,6 +11,12 @@
     padding: 0;
     background-color: #f4f4f4;
   }
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 2em;
+  }
 
 /* Navigation Bar */
   nav {
