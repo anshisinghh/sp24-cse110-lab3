@@ -219,11 +219,11 @@
     width: 80%;
     max-width: 600px; /* Units */
     position: sticky; top: 0;
+    transition: background-color 0.3s ease;
     p { /* Nested Selector */
       font-size: 14pt; /* Units */
       color: hsl(270, 50%, 50%); /* HSL Color */
     }
-    transition: background-color 0.3s ease;
   }
   details:hover {
       background-color: #dbcfeb;
