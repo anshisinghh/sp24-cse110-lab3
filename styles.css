@@ -3,12 +3,12 @@
   --dark-theme-color: #231942;
   --medium-theme-color: #5e548e;
   --light-theme-color: #9f86c0;
-  --button-hover-color: color(display-p3 0.21464 0.22695 0.7395 / 1);
-  --phone-button-color: color-mix(in oklab, #18b016, #4179fc 10%);
+  --button-hover-color: color(display-p3 0.21464 0.22695 0.7395 / 1); /* Wider-gamut Color */
+  --phone-button-color: color-mix(in oklab, #18b016, #4179fc 10%); /* Wider-gamut Color */
 }
 
 /* Header */
-  header {
+  header { 
     background-color: var(--medium-theme-color);
     color: white;
     text-align: center;
@@ -16,15 +16,15 @@
     width: 100%;
   }
   body {
-    font-family: 'Platypi', serif;
+    font-family: 'Platypi', serif; /* Used Custom Fonts */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Background Color */
   }
-  h2, h3, h4 {
+  h2, h3, h4 { /* Selector List */
     font-family: 'Young Serif', serif;
   }
-  h1 {
+  h1 { /* Element Selector */
     font-family: "Honk", system-ui;
     font-size: 2.25em;
   }
@@ -37,22 +37,22 @@
     background-color: var(--medium-theme-color);
     color: white;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 10px; /* Box Model: Padding */
+    padding-bottom: 10px; /* Box Model: Padding */
+    padding-left: 20px; /* Box Model: Padding */
+    padding-right: 20px; /* Box Model: Padding */
     width: 100%;
   }
 
 /* Navigation Bar */
   nav {
-    display: flex;
+    display: flex; /* Flex Layout */
     justify-content: center;
     background-color: var(--light-theme-color);
     padding: 10px 0;
     width: 100%;
   }
-  nav ul {
+  nav ul { /* Descendant Combinator */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -73,18 +73,23 @@
   .no-underline:hover {
     text-decoration: none;
   }
+  nav * {
+    cursor: pointer;
+  }
+
 
 /* Dropdown for Meeting Notes */
   .dropdown-content {
-    display: none;
+    display: none; /* display */
     position: absolute;
     background-color: var(--light-theme-color);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
   }
   .dropdown-content a {
     color: white;
     padding: 5px 5px;
-    display: block;
+    display: block; /* Display */
     text-align: left;
   }
   .dropdown:hover .dropdown-content {
@@ -93,27 +98,27 @@
 
 /* Main */
     body {
-        margin: 0;
+        margin: 0; /* Box Model: Margin */
         padding: 0;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 100vh; /* Units */
     }
     main {
         flex: 1;
         padding: 20px;
     }
     h2 {
-        text-align: center;
+        text-align: center; 
     }
 
 /* Meeting Page */  
   .meeting-nav {
     background-color: var(--dark-theme-color);
   }
-  .meeting-nav ul li {
+  .meeting-nav ul li { /* Combining Two Selectors */
     margin-top: 0;
-    margin-right: .2in;
+    margin-right: .2in; /* Units */
     margin-left: .2in;    
   }
   .meeting-nav ul {
@@ -121,20 +126,20 @@
   }
   main.meeting-page {
     min-width: 400px;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 800px; /* Sizing */
+    margin: 20px auto; /* Box Model: Margin */
+    padding: 20px; /* Box Model: Padding */
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   .meeting-page li {
-    margin-top: 10px;
+    margin-top: 10px; /* Box Model: Margin */
   }
   h3 {
     color: var(--dark-theme-color);
     font-size: 1.5em;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Box Model: Margin */
   }
   h4 {
     color: black;
@@ -145,7 +150,7 @@
   section {
     margin-bottom: 20px;
   }
-  .checkbox:has(li) {
+  .checkbox:has(li) { /* :has() Selector  */
     list-style-type: "☐ ";
   }
   img {
@@ -155,19 +160,19 @@
   .img-container {
     display: flex;
     justify-content: space-around;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* Hex Color */
   }
-  h3 + .img-container {
+  h3 + .img-container { /* Adjacent Sibling Combinator */
     margin-top: 20px;
   }
   .img-label {
     text-align: center;
     margin-bottom: 20px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { /* Responsiveness */
     nav ul li {
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 10px; /* Box Model: Margin */
+      margin-left: 10px; /* Box Model: Margin */
     }
     .meeting-nav ul li {
       margin-right: 10px;
@@ -212,12 +217,16 @@
     padding: 20px;
     margin-bottom: 20px;
     width: 80%;
-    max-width: 600px;
+    max-width: 600px; /* Units */
     position: sticky; top: 0;
     p { /* Nested Selector */
-      font-size: 14pt;
-      color: hsl(270, 50%, 50%);
+      font-size: 14pt; /* Units */
+      color: hsl(270, 50%, 50%); /* HSL Color */
     }
+    transition: background-color 0.3s ease;
+  }
+  details:hover {
+      background-color: #dbcfeb;
   }
   summary {
     font-size: 24px;
@@ -228,31 +237,36 @@
   strong {
     color: var(--light-theme-color);
   }
-  summary:hover {
-    color: var(--light-theme-color);
-  }
   .home-main p {
     font-size: 20px;
     text-align: center;
   }
-  p ~ span {
+  p ~ span { /* General Sibling Combinator */
     font-size: 20px;
     text-align: center;
     font-weight: bold;
   }
   .pitch {
     background-color: #c9ade6;
+    animation: colorChange 5s infinite; /* Animations */
   }
+  @keyframes colorChange {
+    0% { background-color: #c9ade6; }
+    25% { background-color: #b188d1; }
+    50% { background-color: #9b6cc0; }
+    75% { background-color: #7f4fad; }
+    100% { background-color: #642d9e; }
+}
 
 /* Contact Page */
-  * {
+  * { /* Universal Selector */
     box-sizing: border-box;
   }
   .contain {
-    max-width: 95vw;
+    max-width: 95vw; /* Units */
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 1em; /* Units */
   }
   @media (min-width: 600px) {
     .contain {
@@ -262,25 +276,25 @@
   #contains-info h2, #contains-info ul {
     margin: 0;
   }
-  #contains-info h2 {
-    margin-bottom: 1rem;
+  #contains-info h2 { /* ID Selector */
+    margin-bottom: 1rem; /* Units */
   }
   input, textarea, button {
     width: 100%;
-    border-width: 1px;
-    border-color: #000;
-    border-style: solid;
-    border-radius: 5px;
+    border-width: 1px; /* Borders */
+    border-color: #000; /* Borders */
+    border-style: solid; /* Borders */
+    border-radius: 5px; /* Borders */
   }
   .wrapper {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   }
-  .wrapper > * {
+  .wrapper > * { /* Child Combinator */
     padding: 1em;
   }
   @media (min-width: 700px) {
     .wrapper {
-      display: grid;
+      display: grid; /* Grid Layout */
       grid-template-columns: 1fr 2fr;
     }
     .wrapper > * {
@@ -304,7 +318,7 @@
     padding: 0;
   }
   .contact-list li {
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.5cm; /* Units */
   }
   .contacts {
     background-color: var(--light-theme-color);
@@ -332,12 +346,13 @@
   button, input, textarea {
     padding: 1em;
   }
-  input[type="submit"] {
+  input[type="submit"] { /* Attribute Selector */
     background-color: var(--light-theme-color);
     width: 100%;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: white; /* Color Name */
+    transition: background-color 0.3s ease; /* Transformations */
   }
   input[type="submit"]:hover, input[type="submit"]:focus {
     outline: 0;
@@ -350,22 +365,24 @@
   .button {
     padding: 0.1cm 0.2cm;
     background-color: rgb(0, 123, 255);
-    color: white;
+    color: white; /* Text */
     border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
+    text-decoration: none; /* Text */
+    text-align: center; /* Text */
+    transition: background-color 0.3s ease;
   }  
-  .button:hover {
-    background-color: var(--button-hover-color, #0056b3);
+  .button:hover { /* Pseudo-class Selector */
+    background-color: var(--button-hover-color, #0056b3); /* Fallback for variable */
   }
-  .button:active {
-    background-color: rgb(9, 16, 86);
+  .button:active { /* Pseudo-class Selector */
+    background-color: rgb(9, 16, 86); /* RGB Color */
   }
   .button:focus {
     outline: none;
   }
   .phone-button {
     background-color: var(--phone-button-color, #28a745);
+    transition: background-color 0.3s ease;
   }
   .phone-button:hover {
     background-color: #218838;
